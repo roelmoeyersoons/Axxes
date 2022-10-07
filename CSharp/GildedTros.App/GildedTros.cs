@@ -12,16 +12,16 @@ namespace GildedTros.App
 
         public void UpdateQuality()
         {
-            foreach(var item in Items)
+            foreach (var item in Items)
             {
-                if (item.Name != "Good Wine" 
+                if (item.Name != "Good Wine"
                     && item.Name != "Backstage passes for Re:factor"
                     && item.Name != "Backstage passes for HAXX"
                     && item.Name != "B-DAWG Keychain")
                 {
                     if (item.Quality > 0)
                     {
-                            item.Quality = item.Quality - 1;
+                        item.Quality = item.Quality - 1;
                     }
                 }
                 else
@@ -35,12 +35,18 @@ namespace GildedTros.App
                         {
                             if (item.SellIn < 11)
                             {
-                                item.Quality = item.Quality + 1;                            
+                                if (item.Quality < 50)
+                                {
+                                    item.Quality = item.Quality + 1;
+                                }
                             }
 
                             if (item.SellIn < 6)
                             {
+                                if (item.Quality < 50)
+                                {
                                     item.Quality = item.Quality + 1;
+                                }
                             }
                         }
                     }
@@ -68,7 +74,7 @@ namespace GildedTros.App
                         }
                         else
                         {
-                            item.Quality = item.Quality - item.Quality;
+                            item.Quality = 0;
                         }
                     }
                     else
