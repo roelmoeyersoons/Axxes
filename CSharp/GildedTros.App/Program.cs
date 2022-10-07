@@ -1,15 +1,32 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using GildedTros.App.Helpers;
 
 namespace GildedTros.App
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            Console.WriteLine("OMGHAI!");
+            using (var host = Host
+                .CreateDefaultBuilder(args)
+                .ConfigureLogging((context, builder) =>
+                {
+                    builder.ClearProviders();
+                    builder.AddConsole(x => x.FormatterName = "lolol");
+                    builder.AddCustomFormatter();
+                })
+                .Build())
+            {
+                var logger = host.Services.GetRequiredService<ILogger<Program>>();
 
-            IList<Item> Items = new List<Item>{
+                logger.LogInformation("OMGHAI!");
+
+                IList<Item> Items = new List<Item>{
                 new Item {Name = "Ring of Cleansening Code", SellIn = 10, Quality = 20},
                 new Item {Name = "Good Wine", SellIn = 2, Quality = 0},
                 new Item {Name = "Elixir of the SOLID", SellIn = 5, Quality = 7},
@@ -22,22 +39,24 @@ namespace GildedTros.App
                 new Item {Name = "Duplicate Code", SellIn = 3, Quality = 6},
                 new Item {Name = "Long Methods", SellIn = 3, Quality = 6},
                 new Item {Name = "Ugly Variable Names", SellIn = 3, Quality = 6}
-            };
+                };
 
-            var app = new GildedTros(Items);
+                var app = new GildedTros(Items);
 
 
-            for (var i = 0; i < 31; i++)
-            {
-                Console.WriteLine("-------- day " + i + " --------");
-                Console.WriteLine("name, sellIn, quality");
-                for (var j = 0; j < Items.Count; j++)
+                for (var i = 0; i < 31; i++)
                 {
-                    System.Console.WriteLine(Items[j].Name + ", " + Items[j].SellIn + ", " + Items[j].Quality);
+                    logger.LogInformation("-------- day " + i + " --------");
+                    logger.LogInformation("name, sellIn, quality");
+                    for (var j = 0; j < Items.Count; j++)
+                    {
+                        logger.LogInformation(Items[j].Name + ", " + Items[j].SellIn + ", " + Items[j].Quality);
+                    }
+                    logger.LogInformation("");
+                    app.UpdateQuality();
                 }
-                Console.WriteLine("");
-                app.UpdateQuality();
             }
+
         }
     }
 }
