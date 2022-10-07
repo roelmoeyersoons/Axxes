@@ -13,6 +13,9 @@ namespace GildedTros.App
         [Fact]
         public void ThirtyDays()
         {
+            //https://github.com/approvals/ApprovalTests.Net very interesting, never heard of this way of testing
+            //i will just compare the .received. files.
+
             var fakeoutput = new StringBuilder();
             Console.SetOut(new StringWriter(fakeoutput));
             Console.SetIn(new StringReader("a\n"));
