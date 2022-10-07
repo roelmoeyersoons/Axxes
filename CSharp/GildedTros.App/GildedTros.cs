@@ -26,27 +26,19 @@ namespace GildedTros.App
                 }
                 else
                 {
-                    if (item.Quality < 50)
+                    if (item.IncrementQuality())
                     {
-                        item.Quality = item.Quality + 1;
-
-                        if (item.Name == "Backstage passes for Re:factor"
+                          if (item.Name == "Backstage passes for Re:factor"
                         || item.Name == "Backstage passes for HAXX")
                         {
                             if (item.SellIn < 11)
                             {
-                                if (item.Quality < 50)
-                                {
-                                    item.Quality = item.Quality + 1;
-                                }
+                                item.IncrementQuality();
                             }
 
                             if (item.SellIn < 6)
                             {
-                                if (item.Quality < 50)
-                                {
-                                    item.Quality = item.Quality + 1;
-                                }
+                                item.IncrementQuality();
                             }
                         }
                     }
@@ -79,10 +71,7 @@ namespace GildedTros.App
                     }
                     else
                     {
-                        if (item.Quality < 50)
-                        {
-                            item.Quality = item.Quality + 1;
-                        }
+                        item.IncrementQuality();
                     }
                 }
             }
