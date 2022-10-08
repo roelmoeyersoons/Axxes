@@ -35,5 +35,10 @@
                 }
             }
         }
+
+        public override string ToString()
+        {
+            return Name + ", " + SellIn + ", " + Quality;
+        }
     }
 }

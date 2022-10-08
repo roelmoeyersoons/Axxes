@@ -1,27 +1,41 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace GildedTros.App
 {
     public class GildedTros
     {
         IList<ItemBase> Items;
-        public GildedTros(IList<ItemBase> Items)
+        private readonly ILogger _logger;
+
+        public GildedTros(IList<ItemBase> Items, ILogger logger)
         {
             this.Items = Items;
+            _logger = logger ?? throw new ArgumentNullException($"GildedTros: {nameof(logger)} null");
         }
-
-        //https://github.com/NotMyself/GildedRose
-        /*
-            - apparently you are not allowed to modify the Item class. 
-            - since IList is not covariant unlike IEnumerable
-         */
-
 
         public void UpdateQuality()
         {
-            foreach (var item in Items)
+            foreach (var item in Items ?? Enumerable.Empty<ItemBase>())
             {
                 item.UpdateQuality();
+            }
+        }
+
+        public void RunApp()
+        {
+            for (var i = 0; i < 31; i++)
+            {
+                _logger.LogInformation("-------- day " + i + " --------");
+                _logger.LogInformation("name, sellIn, quality");
+                foreach (var item in Items ?? Enumerable.Empty<ItemBase>())
+                {
+                    _logger.LogInformation(item.ToString());
+                }
+                _logger.LogInformation("");
+                UpdateQuality();
             }
         }
 

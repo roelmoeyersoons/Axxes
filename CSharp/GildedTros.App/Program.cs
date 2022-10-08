@@ -15,6 +15,7 @@ namespace GildedTros.App
         {
             using (var host = Host
                 .CreateDefaultBuilder(args)
+                .AddApp()
                 .ConfigureLogging((context, builder) =>
                 {
                     builder.ClearProviders();
@@ -42,20 +43,10 @@ namespace GildedTros.App
                 new ItemBase {Name = "Ugly Variable Names", SellIn = 3, Quality = 6}
                 };
 
-                var app = new GildedTros(Items);
+                var app = new GildedTros(Items, logger);
+                app.RunApp();
 
-
-                for (var i = 0; i < 31; i++)
-                {
-                    logger.LogInformation("-------- day " + i + " --------");
-                    logger.LogInformation("name, sellIn, quality");
-                    for (var j = 0; j < Items.Count; j++)
-                    {
-                        logger.LogInformation(Items[j].Name + ", " + Items[j].SellIn + ", " + Items[j].Quality);
-                    }
-                    logger.LogInformation("");
-                    app.UpdateQuality();
-                }
+                
             }
 
         }
