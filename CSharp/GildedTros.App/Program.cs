@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using GildedTros.App.Helpers;
+using GildedTros.App.Items;
 
 namespace GildedTros.App
 {
@@ -28,13 +29,13 @@ namespace GildedTros.App
 
                 IList<ItemBase> Items = new List<ItemBase>{
                 new ItemBase {Name = "Ring of Cleansening Code", SellIn = 10, Quality = 20},
-                new ItemBase {Name = "Good Wine", SellIn = 2, Quality = 0},
+                new Wine {Name = "Good Wine", SellIn = 2, Quality = 0},
                 new ItemBase {Name = "Elixir of the SOLID", SellIn = 5, Quality = 7},
-                new ItemBase {Name = "B-DAWG Keychain", SellIn = 0, Quality = 80},
-                new ItemBase {Name = "B-DAWG Keychain", SellIn = -1, Quality = 80},
-                new ItemBase {Name = "Backstage passes for Re:factor", SellIn = 15, Quality = 20},
-                new ItemBase {Name = "Backstage passes for Re:factor", SellIn = 10, Quality = 49},
-                new ItemBase {Name = "Backstage passes for HAXX", SellIn = 5, Quality = 49},
+                new KeyChain {Name = "B-DAWG Keychain", SellIn = 0, Quality = 80},
+                new KeyChain {Name = "B-DAWG Keychain", SellIn = -1, Quality = 80},
+                new Pass {Name = "Backstage passes for Re:factor", SellIn = 15, Quality = 20},
+                new Pass {Name = "Backstage passes for Re:factor", SellIn = 10, Quality = 49},
+                new Pass {Name = "Backstage passes for HAXX", SellIn = 5, Quality = 49},
                 // these smelly items do not work properly yet
                 new ItemBase {Name = "Duplicate Code", SellIn = 3, Quality = 6},
                 new ItemBase {Name = "Long Methods", SellIn = 3, Quality = 6},
