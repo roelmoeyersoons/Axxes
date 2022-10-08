@@ -19,7 +19,6 @@ namespace GildedTros.App
                 .ConfigureLogging((context, builder) =>
                 {
                     builder.ClearProviders();
-                    builder.AddConsole(x => x.FormatterName = "lolol");
                     builder.AddCustomFormatter();
                 })
                 .Build())
@@ -44,7 +43,8 @@ namespace GildedTros.App
                 };
 
                 var app = new GildedTros(Items, logger);
-                app.RunApp();
+
+                app.RunApp(31);
 
                 
             }

@@ -9,6 +9,7 @@ namespace GildedTros.App
     {
         IList<ItemBase> Items;
         private readonly ILogger _logger;
+        //if using DI correctly, you can use iLogger<GildedTros>
 
         public GildedTros(IList<ItemBase> Items, ILogger logger)
         {
@@ -24,9 +25,9 @@ namespace GildedTros.App
             }
         }
 
-        public void RunApp()
+        public void RunApp(int days)
         {
-            for (var i = 0; i < 31; i++)
+            for (var i = 0; i < days; i++)
             {
                 _logger.LogInformation("-------- day " + i + " --------");
                 _logger.LogInformation("name, sellIn, quality");

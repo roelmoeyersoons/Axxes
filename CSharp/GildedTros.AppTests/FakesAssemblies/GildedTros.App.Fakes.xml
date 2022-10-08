@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GildedTros.App.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:GildedTros.App.Fakes.ShimApprovalTest">
+            <summary>Shim type of GildedTros.App.ApprovalTest</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimApprovalTest.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimApprovalTest.#ctor(GildedTros.App.ApprovalTest)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.ShimApprovalTest.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimApprovalTest.AllInstances.ThirtyDays">
+            <summary>Sets the Shim of ApprovalTest.ThirtyDays(ApprovalTest this)</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimApprovalTest.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimApprovalTest.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimApprovalTest.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimApprovalTest.Constructor">
+            <summary>Sets the Shim of ApprovalTest.ApprovalTest(ApprovalTest this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimApprovalTest.ThirtyDays">
+            <summary>Sets the Shim of ApprovalTest.ThirtyDays(ApprovalTest this)</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.ShimGildedTros">
+            <summary>Shim type of GildedTros.App.GildedTros</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimGildedTros.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimGildedTros.#ctor(GildedTros.App.GildedTros)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.ShimGildedTros.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimGildedTros.AllInstances.RunAppInt32">
+            <summary>Sets the Shim of GildedTros.RunApp(GildedTros this, Int32 days)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimGildedTros.AllInstances.UpdateQuality">
+            <summary>Sets the Shim of GildedTros.UpdateQuality(GildedTros this)</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimGildedTros.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimGildedTros.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimGildedTros.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimGildedTros.ConstructorIListOfItemBaseILogger">
+            <summary>Sets the Shim of GildedTros.GildedTros(GildedTros this, IList`1 Items, ILogger logger)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimGildedTros.RunAppInt32">
+            <summary>Sets the Shim of GildedTros.RunApp(GildedTros this, Int32 days)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimGildedTros.UpdateQuality">
+            <summary>Sets the Shim of GildedTros.UpdateQuality(GildedTros this)</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.ShimItem">
+            <summary>Shim type of GildedTros.App.Item</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimItem.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimItem.#ctor(GildedTros.App.Item)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.ShimItem.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.AllInstances.NameGet">
+            <summary>Sets the Shim of Item.get_Name(Item this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.AllInstances.NameSetString">
+            <summary>Sets the Shim of Item.set_Name(Item this, String value)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.AllInstances.QualityGet">
+            <summary>Sets the Shim of Item.get_Quality(Item this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.AllInstances.QualitySetInt32">
+            <summary>Sets the Shim of Item.set_Quality(Item this, Int32 value)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.AllInstances.SellInGet">
+            <summary>Sets the Shim of Item.get_SellIn(Item this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.AllInstances.SellInSetInt32">
+            <summary>Sets the Shim of Item.set_SellIn(Item this, Int32 value)</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimItem.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimItem.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.Constructor">
+            <summary>Sets the Shim of Item.Item(Item this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.NameGet">
+            <summary>Sets the Shim of Item.get_Name(Item this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.NameSetString">
+            <summary>Sets the Shim of Item.set_Name(Item this, String value)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.QualityGet">
+            <summary>Sets the Shim of Item.get_Quality(Item this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.QualitySetInt32">
+            <summary>Sets the Shim of Item.set_Quality(Item this, Int32 value)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.SellInGet">
+            <summary>Sets the Shim of Item.get_SellIn(Item this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItem.SellInSetInt32">
+            <summary>Sets the Shim of Item.set_SellIn(Item this, Int32 value)</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.ShimItemBase">
+            <summary>Shim type of GildedTros.App.ItemBase</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimItemBase.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimItemBase.#ctor(GildedTros.App.ItemBase)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.ShimItemBase.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItemBase.AllInstances.IncrementQuality">
+            <summary>Sets the Shim of ItemBase.IncrementQuality(ItemBase this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItemBase.AllInstances.ToString01">
+            <summary>Sets the Shim of ItemBase.ToString(ItemBase this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItemBase.AllInstances.UpdateQuality">
+            <summary>Sets the Shim of ItemBase.UpdateQuality(ItemBase this)</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimItemBase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.ShimItemBase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItemBase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItemBase.Constructor">
+            <summary>Sets the Shim of ItemBase.ItemBase(ItemBase this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItemBase.IncrementQuality">
+            <summary>Sets the Shim of ItemBase.IncrementQuality(ItemBase this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItemBase.ToString">
+            <summary>Sets the Shim of ItemBase.ToString(ItemBase this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.ShimItemBase.UpdateQuality">
+            <summary>Sets the Shim of ItemBase.UpdateQuality(ItemBase this)</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.StubApprovalTest">
+            <summary>Stub type of GildedTros.App.ApprovalTest</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubApprovalTest.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubApprovalTest.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubApprovalTest.InitializeStub">
+            <summary>Initializes a new instance of type StubApprovalTest</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubApprovalTest.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubApprovalTest.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.StubGildedTros">
+            <summary>Stub type of GildedTros.App.GildedTros</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubGildedTros.#ctor(System.Collections.Generic.IList{GildedTros.App.ItemBase},Microsoft.Extensions.Logging.ILogger)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubGildedTros.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubGildedTros.InitializeStub">
+            <summary>Initializes a new instance of type StubGildedTros</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubGildedTros.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubGildedTros.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.StubItem">
+            <summary>Stub type of GildedTros.App.Item</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubItem.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubItem.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubItem.InitializeStub">
+            <summary>Initializes a new instance of type StubItem</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubItem.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubItem.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:GildedTros.App.Fakes.StubItemBase">
+            <summary>Stub type of GildedTros.App.ItemBase</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubItemBase.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubItemBase.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubItemBase.InitializeStub">
+            <summary>Initializes a new instance of type StubItemBase</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubItemBase.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:GildedTros.App.Fakes.StubItemBase.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubItemBase.ToString">
+            <summary>Sets the Stub of ItemBase.ToString(ItemBase this)</summary>
+        </member>
+        <member name="F:GildedTros.App.Fakes.StubItemBase.ToString01">
+            <summary>Sets the stub of ItemBase.ToString(ItemBase this)</summary>
+        </member>
+        <member name="M:GildedTros.App.Fakes.StubItemBase.UpdateQuality">
+            <summary>Sets the Stub of ItemBase.UpdateQuality(ItemBase this)</summary>
+        </member>
+        <member name="F:GildedTros.App.Fakes.StubItemBase.UpdateQuality01">
+            <summary>Sets the stub of ItemBase.UpdateQuality(ItemBase this)</summary>
+        </member>
+        <member name="T:GildedTros.App.Helpers.Fakes.ShimAppExtensions">
+            <summary>Shim type of GildedTros.App.Helpers.AppExtensions</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimAppExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimAppExtensions.AddAppIHostBuilder">
+            <summary>Sets the Shim of AppExtensions.AddApp(IHostBuilder builder)</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimAppExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimAppExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimAppExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:GildedTros.App.Helpers.Fakes.ShimConsoleLoggerExtensions">
+            <summary>Shim type of GildedTros.App.Helpers.ConsoleLoggerExtensions</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimConsoleLoggerExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimConsoleLoggerExtensions.AddCustomFormatterILoggingBuilder">
+            <summary>Sets the Shim of ConsoleLoggerExtensions.AddCustomFormatter(ILoggingBuilder builder)</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimConsoleLoggerExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimConsoleLoggerExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimConsoleLoggerExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter">
+            <summary>Shim type of GildedTros.App.Helpers.CustomLoggingFormatter</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.#ctor(GildedTros.App.Helpers.CustomLoggingFormatter)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.AllInstances.Dispose">
+            <summary>Sets the Shim of CustomLoggingFormatter.Dispose(CustomLoggingFormatter this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.AllInstances.ReloadLoggerOptionsConsoleFormatterOptions">
+            <summary>Sets the Shim of CustomLoggingFormatter.ReloadLoggerOptions(CustomLoggingFormatter this, ConsoleFormatterOptions options)</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.AllInstances.WriteOf1LogEntryOfM0RefIExternalScopeProviderTextWriter``1(Microsoft.QualityTools.Testing.Fakes.Delegates.GildedTrosAppDelegates.Ref1Action4{GildedTros.App.Helpers.CustomLoggingFormatter,Microsoft.Extensions.Logging.Abstractions.LogEntry{``0},Microsoft.Extensions.Logging.IExternalScopeProvider,System.IO.TextWriter})">
+            <summary>Sets the Shim of CustomLoggingFormatter.Write(CustomLoggingFormatter this, LogEntry`1&lt;!!0&gt;&amp; logEntry, IExternalScopeProvider scopeProvider, TextWriter textWriter)</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.ConstructorIOptionsMonitorOfConsoleFormatterOptions">
+            <summary>Sets the Shim of CustomLoggingFormatter.CustomLoggingFormatter(CustomLoggingFormatter this, IOptionsMonitor`1 options)</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.Dispose">
+            <summary>Sets the Shim of CustomLoggingFormatter.Dispose(CustomLoggingFormatter this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Helpers.Fakes.ShimCustomLoggingFormatter.ReloadLoggerOptionsConsoleFormatterOptions">
+            <summary>Sets the Shim of CustomLoggingFormatter.ReloadLoggerOptions(CustomLoggingFormatter this, ConsoleFormatterOptions options)</summary>
+        </member>
+        <member name="T:GildedTros.App.Items.Fakes.ShimPass">
+            <summary>Shim type of GildedTros.App.Items.Pass</summary>
+        </member>
+        <member name="M:GildedTros.App.Items.Fakes.ShimPass.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:GildedTros.App.Items.Fakes.ShimPass.#ctor(GildedTros.App.Items.Pass)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:GildedTros.App.Items.Fakes.ShimPass.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:GildedTros.App.Items.Fakes.ShimPass.AllInstances.UpdateQuality">
+            <summary>Sets the Shim of Pass.UpdateQuality(Pass this)</summary>
+        </member>
+        <member name="M:GildedTros.App.Items.Fakes.ShimPass.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:GildedTros.App.Items.Fakes.ShimPass.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Items.Fakes.ShimPass.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:GildedTros.App.Items.Fakes.ShimPass.Constructor">
+            <summary>Sets the Shim of Pass.Pass(Pass this)</summary>
+        </member>
+        <member name="P:GildedTros.App.Items.Fakes.ShimPass.UpdateQuality">
+            <summary>Sets the Shim of Pass.UpdateQuality(Pass this)</summary>
+        </member>
+        <member name="T:GildedTros.App.Items.Fakes.StubPass">
+            <summary>Stub type of GildedTros.App.Items.Pass</summary>
+        </member>
+        <member name="M:GildedTros.App.Items.Fakes.StubPass.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:GildedTros.App.Items.Fakes.StubPass.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:GildedTros.App.Items.Fakes.StubPass.InitializeStub">
+            <summary>Initializes a new instance of type StubPass</summary>
+        </member>
+        <member name="P:GildedTros.App.Items.Fakes.StubPass.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:GildedTros.App.Items.Fakes.StubPass.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:GildedTros.App.Items.Fakes.StubPass.ToString">
+            <summary>Sets the Stub of ItemBase.ToString(ItemBase this)</summary>
+        </member>
+        <member name="F:GildedTros.App.Items.Fakes.StubPass.ToString01">
+            <summary>Sets the stub of ItemBase.ToString(ItemBase this)</summary>
+        </member>
+        <member name="M:GildedTros.App.Items.Fakes.StubPass.UpdateQuality">
+            <summary>Sets the Stub of Pass.UpdateQuality(Pass this)</summary>
+        </member>
+        <member name="F:GildedTros.App.Items.Fakes.StubPass.UpdateQuality01">
+            <summary>Sets the stub of Pass.UpdateQuality(Pass this)</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.GildedTrosAppDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of GildedTros.App</summary>
+        </member>
+    </members>
+</doc>
