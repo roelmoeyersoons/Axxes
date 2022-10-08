@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GildedTros.App.Items
 {
-    internal class Pass : ItemBase
+    public class Pass : ItemBase
     {
         public override void UpdateQuality()
         {
